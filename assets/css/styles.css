@@ -105,11 +105,31 @@ h3 {
   background-position: 100% 50%; /* mueve el gradiente suavemente */
 }
 
+.btn-spotify {
+  background: linear-gradient(90deg, #1DB954 0%, #1ED760 100%);
+  color: white;
+  padding: 20px 40px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-position 0.5s ease;
+  background-size: 300% 300%; /* para animar gradiente */
+  background-position: 0% 50%;
+}
+
+.btn-spotify:hover {
+  background: linear-gradient(90deg, #1ED760 0%, #1DB954 100%);
+  transform: scale(1.05);
+}
+
 /* === HERO === */
 .hero {
   position: relative;
   height: 86vh;
-  background: url('/assets/img/hero.png') center center/cover no-repeat;
+  background: url('../img/hero.png') center center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -244,7 +264,7 @@ h3 {
 
 /* === SECCIONES CON IMAGEN DE FONDO === */
 .bg-image-section {
-  background: url('assets/img/hero.png') center center/cover no-repeat;
+  background: url('../img/hero.png') center center/cover no-repeat;
   position: relative;
 }
 
