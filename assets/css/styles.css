@@ -64,12 +64,45 @@ h3 {
 }
 
 .btn-whatsapp {
-  background-color: #25D366;
+  background: linear-gradient(45deg, #25D366, #1EBEA5, #128C7E);
   color: white;
   padding: 20px 40px;
   font-weight: bold;
   border-radius: 8px;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-position 0.5s ease;
+  background-size: 300% 300%; /* para animar gradiente */
+  background-position: 0% 50%;
+}
+
+.btn-whatsapp:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  background-position: 100% 50%; /* anima el gradiente */
+}
+
+.btn-instagram {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  color: white;
+  padding: 20px 40px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-position 0.5s ease;
+  background-size: 300% 300%; /* necesario para animar gradiente */
+  background-position: 0% 50%;
+}
+
+.btn-instagram:hover {
+  transform: scale(1.08); /* pequeño “zoom” */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  background-position: 100% 50%; /* mueve el gradiente suavemente */
 }
 
 /* === HERO === */
@@ -191,13 +224,13 @@ h3 {
   align-content: center;
 }
 
-.gusHoyFrase{
+.gusHoyFrase {
   display: flex;
-  font-style:italic;
-  color:#e5e5e5;
-  max-width:800px;
-  margin:40px auto;
-  text-align:center;
+  font-style: italic;
+  color: #e5e5e5;
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
   align-content: center;
   flex-wrap: wrap;
 }
@@ -259,7 +292,16 @@ h3 {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }
+}
+
+/* === CONTACTO === */
+.contactos {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-self: center;
 }
