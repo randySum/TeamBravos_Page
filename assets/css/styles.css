@@ -109,7 +109,7 @@ h3 {
 .hero {
   position: relative;
   height: 86vh;
-  background: url('assets/img/hero.png') center center/cover no-repeat;
+  background: url('/assets/img/hero.png') center center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
