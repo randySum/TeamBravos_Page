@@ -295,13 +295,13 @@ h3 {
 
 .slider-track {
   display: flex;
-  gap: 20px;
+  gap: 70px;
   width: max-content;
-  animation: scroll 30s linear infinite;
+  animation: scroll 43s linear infinite;
 }
 
 .slider-track img {
-  width: 500px;
+  width: 600px;
   height: 500px;
   object-fit: cover;
   border-radius: 8px;
