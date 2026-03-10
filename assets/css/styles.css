@@ -129,7 +129,7 @@ h3 {
 .hero {
   position: relative;
   height: 86vh;
-  background: url('../img/hero.png') center center/cover no-repeat;
+  background: url('../img/hero.jpeg') center center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -264,7 +264,7 @@ h3 {
 
 /* === SECCIONES CON IMAGEN DE FONDO === */
 .bg-image-section {
-  background: url('../img/hero.png') center center/cover no-repeat;
+  background: url('../img/bg_casosReales.jpeg') center center/cover no-repeat;
   position: relative;
 }
 
