@@ -74,14 +74,16 @@ h3 {
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-position 0.5s ease;
-  background-size: 300% 300%; /* para animar gradiente */
+  background-size: 300% 300%;
+  /* para animar gradiente */
   background-position: 0% 50%;
 }
 
 .btn-whatsapp:hover {
   transform: scale(1.08);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-  background-position: 100% 50%; /* anima el gradiente */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  background-position: 100% 50%;
+  /* anima el gradiente */
 }
 
 .btn-instagram {
@@ -95,14 +97,17 @@ h3 {
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-position 0.5s ease;
-  background-size: 300% 300%; /* necesario para animar gradiente */
+  background-size: 300% 300%;
+  /* necesario para animar gradiente */
   background-position: 0% 50%;
 }
 
 .btn-instagram:hover {
-  transform: scale(1.08); /* pequeño “zoom” */
-  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-  background-position: 100% 50%; /* mueve el gradiente suavemente */
+  transform: scale(1.08);
+  /* pequeño “zoom” */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  background-position: 100% 50%;
+  /* mueve el gradiente suavemente */
 }
 
 .btn-spotify {
@@ -116,7 +121,8 @@ h3 {
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-position 0.5s ease;
-  background-size: 300% 300%; /* para animar gradiente */
+  background-size: 300% 300%;
+  /* para animar gradiente */
   background-position: 0% 50%;
 }
 
@@ -174,6 +180,62 @@ h3 {
 
 .como-trabajamos .row {
   align-items: center;
+}
+
+.comidas-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 8%;
+  gap: 10%;
+}
+
+.titulo-largo{
+  justify-self: center;
+}
+
+.imagen-comida{
+  flex-grow: 1;
+}
+
+.card-comidas{
+  border: none;
+}
+
+.holographic-card {
+  background: #ffffff00;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.holographic-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg, 
+    transparent, 
+    transparent 30%, 
+    rgba(221, 221, 221, 0.863)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.holographic-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(116, 115, 115, 0.384)
+}
+
+.holographic-card:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
 }
 
 /* === TIMELINE === */
