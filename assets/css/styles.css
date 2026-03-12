@@ -192,15 +192,15 @@ h3 {
   gap: 10%;
 }
 
-.titulo-largo{
+.titulo-largo {
   justify-self: center;
 }
 
-.imagen-comida{
+.imagen-comida {
   flex-grow: 1;
 }
 
-.card-comidas{
+.card-comidas {
   border: none;
 }
 
@@ -218,12 +218,10 @@ h3 {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: linear-gradient(
-    0deg, 
-    transparent, 
-    transparent 30%, 
-    rgba(221, 221, 221, 0.863)
-  );
+  background: linear-gradient(0deg,
+      transparent,
+      transparent 30%,
+      rgba(221, 221, 221, 0.863));
   transform: rotate(-45deg);
   transition: all 0.5s ease;
   opacity: 0;
@@ -243,6 +241,16 @@ h3 {
 .timeline {
   position: relative;
   margin: 100px 0;
+}
+
+.timeline-mobile {
+  /* Timeline oculto de movil. Se activa cuando estamos en resoluciones de movil*/
+  display: none;
+}
+
+.timeline-separator {
+  /* Elemento oculto. Se activa cuando estamos en resoluciones de movil*/
+  display: none;
 }
 
 .timeline::before {
