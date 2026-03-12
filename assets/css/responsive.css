@@ -1,0 +1,68 @@
+/* === HERO MOBILE (xs <576px) === */
+@media (max-width: 575px) {
+
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    padding: 80px 20px;
+  }
+
+  .hero-content {
+    padding: 0 10px;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+
+  .hero p {
+    font-size: 1.4rem !important;
+  }
+
+  .hero .btn {
+    display: block;
+    width: 100%;
+    margin: 12px 0 !important;
+    font-size: 1.2rem !important;
+  }
+
+}
+
+/* === COMO TRABAJAMOS MOBILE === */
+@media (max-width: 575px) {
+
+  .comidas-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .card-comidas {
+    width: 100%;
+  }
+
+  .imagen-comida {
+    width: 100%;
+    height: auto;
+  }
+
+  .titulo-largo {
+    text-align: center;
+    font-size: 2.8rem;
+    padding: 0 20px;
+  }
+
+  .como-trabajamos h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .como-trabajamos p {
+    font-size: 1.2rem !important;
+    text-align: center;
+  }
+
+}
+
