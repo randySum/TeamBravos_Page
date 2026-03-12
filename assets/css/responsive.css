@@ -183,4 +183,28 @@
         animation: scroll 25s linear infinite;
     }
 
+    #contacto .contactos {
+        width: 90%;
+        /* ocupa casi todo el viewport */
+        margin: 0 auto;
+        gap: 15px;
+    }
+
+    #contacto .btn-whatsapp,
+    #contacto .btn-instagram,
+    #contacto .btn-spotify {
+        width: 100%;
+        /* botones ocupan todo el ancho del contenedor */
+        padding: 15px 0;
+        /* altura más cómoda */
+        font-size: 1.2rem !important;
+        /* tamaño legible en móvil */
+        margin-top: 10px;
+    }
+
+    #contacto p.fs-2 {
+        font-size: 1.4rem;
+        /* texto más compacto */
+    }
+
 }
