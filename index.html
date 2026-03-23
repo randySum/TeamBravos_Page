@@ -10,16 +10,24 @@
     href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Montserrat:wght@300;400;600&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
   <link rel="icon" href="assets/img/favicon.PNG" sizes="any">
   <title>Team Bravos</title>
 </head>
 
 <body>
-  <section class="hero">
+  <section class="hero col-12">
+    <!-- Video de fondo solo para móvil -->
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="assets/video/trailer_gus.mp4" type="video/mp4">
+      Tu navegador no soporta video HTML5
+    </video>
+    <div class="hero-overlay"></div> <!-- capa translúcida -->
     <div class="hero-content">
       <h1>TEAM BRAVOS</h1>
       <p class="lead fs-2">Transforma tu físico. Forja tu carácter.</p>
       <a href="#contacto" class="btn btn-main mt-4 me-3 fs-4">Contacto</a>
+      <a href="#clientes" class="btn btn-outline-light mt-4 fs-4 p-2 me-3">Clientes</a>
       <a href="#historia" class="btn btn-outline-light mt-4 fs-4 p-2">Mi Historia</a>
     </div>
   </section>
@@ -31,34 +39,31 @@
       <div class="comidas-container">
         <div class="card card-comidas holographic-card">
           <img class="imagen-comida" src="assets/img/comida_1.jpeg" alt="">
-          <h4 class="text-white p-3 bg-transparent ">Some quick example text to build on the card title and make up
-            the bulk of the
-            card's
-            content.</h4>
+          <h4 class="text-white p-3 bg-transparent ">
+            Durante el proceso aprenderás a construir platos equilibrados, nutritivos y que realmente puedas mantener en
+            tu día a día. Nada de dietas extremas ni comidas imposibles.</h4>
         </div>
 
         <div class="card card-comidas holographic-card">
           <img class="imagen-comida" src="assets/img/comida_2.jpeg" alt="">
-          <h4 class="text-white p-3 bg-transparent ">Some quick example text to build on the card title and make up
-            the bulk of the
-            card's
-            content.</h4>
+          <h4 class="text-white p-3 bg-transparent ">Muchas personas piensan que para cambiar su físico tienen que vivir
+            a base de ensaladas aburridas o comidas sin sabor.
+            La realidad es muy distinta.</h4>
         </div>
 
         <div class="card card-comidas holographic-card">
           <img class="imagen-comida" src="assets/img/comida_3.jpeg" alt="">
-          <h4 class="text-white p-3 bg-transparent ">Some quick example text to build on the card title and make up
-            the bulk of the
-            card's
-            content.</h4>
+          <h4 class="text-white p-3 bg-transparent ">Una buena alimentación no se trata de restricciones, se trata de
+            estrategia.
+            Comida sencilla, equilibrada y pensada para que puedas avanzar hacia tu objetivo sin complicarte la vida.
+          </h4>
         </div>
       </div>
 
 
-      <div class="row align-items-center">
-        <div class="col-md-6 order-md-2">
-          <img src="assets/img/seguimiento_real.jpeg" class="img-fluid"
-            style="width: 600px;height:450px; object-fit:cover;">
+      <div class="row align-items-center mt-lg-5 mb-lg-5">
+        <div class="col-md-6 order-md-2 pr-0">
+          <img src="assets/img/seguimiento_real.jpeg" class="img-fluid">
         </div>
         <div class="col-md-6 order-md-1">
           <h2>Seguimiento Real</h2>
@@ -144,6 +149,55 @@
           </div>
         </div>
       </div>
+      <!--Historia para moviles-->
+      <div class="timeline-mobile">
+
+        <div class="timeline-scroll">
+
+          <div class="timeline-card">
+            <div class="timeline-year">2016</div>
+            <img src="assets/img/2016.jpeg">
+            <p>Primer contacto con el gimnasio. Sin experiencia, pero con hambre de cambio.</p>
+          </div>
+
+          <div class="timeline-card">
+            <div class="timeline-year">2018</div>
+            <img src="assets/img/2018.jpeg">
+            <p>El cambio estaba en proceso.</p>
+          </div>
+
+          <div class="timeline-card">
+            <div class="timeline-year">2020</div>
+            <img src="assets/img/2020.jpeg">
+            <p>Saudade.</p>
+          </div>
+
+          <div class="timeline-card">
+            <div class="timeline-year">2023</div>
+            <img src="assets/img/img_2.jpg">
+            <p>Mão na cabeça.</p>
+          </div>
+
+          <div class="timeline-card">
+            <div class="timeline-year">2024</div>
+            <img src="assets/img/img_5.jpg">
+            <p>Las marditas iban ganando.</p>
+          </div>
+
+          <div class="timeline-card">
+            <div class="timeline-year">2025</div>
+            <img src="assets/img/hero.png">
+            <p>El punto de inflexión.</p>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="timeline-separator">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <h1>
         <div class="granate">2026</div>
       </h1>
@@ -158,11 +212,10 @@
         corazón."
       </div>
     </div>
-
   </section>
 
   <!-- RESULTADOS -->
-  <section class="bg-image-section pt-5">
+  <section id="clientes" class="bg-image-section pt-5">
     <div class="container text-center">
       <h1 class="mb-5">Resultados Reales</h1>
 

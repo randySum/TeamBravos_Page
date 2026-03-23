@@ -2,6 +2,7 @@
 body {
   background-color: #0f0f0f;
   color: #e5e5e5;
+  display: block;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -149,9 +150,28 @@ h3 {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.4));
 }
 
+.hero-video {
+  display: none; /* por defecto oculto */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-overlay {
+  display: none; /* por defecto oculto */
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0; */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.4));
+  z-index: 2;
+}
+
 .hero-content {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   animation: fadeInUp 1.5s ease-out forwards;
 }
 
@@ -191,15 +211,15 @@ h3 {
   gap: 10%;
 }
 
-.titulo-largo{
+.titulo-largo {
   justify-self: center;
 }
 
-.imagen-comida{
+.imagen-comida {
   flex-grow: 1;
 }
 
-.card-comidas{
+.card-comidas {
   border: none;
 }
 
@@ -217,12 +237,10 @@ h3 {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: linear-gradient(
-    0deg, 
-    transparent, 
-    transparent 30%, 
-    rgba(221, 221, 221, 0.863)
-  );
+  background: linear-gradient(0deg,
+      transparent,
+      transparent 30%,
+      rgba(221, 221, 221, 0.863));
   transform: rotate(-45deg);
   transition: all 0.5s ease;
   opacity: 0;
@@ -242,6 +260,16 @@ h3 {
 .timeline {
   position: relative;
   margin: 100px 0;
+}
+
+.timeline-mobile {
+  /* Timeline oculto de movil. Se activa cuando estamos en resoluciones de movil*/
+  display: none;
+}
+
+.timeline-separator {
+  /* Elemento oculto. Se activa cuando estamos en resoluciones de movil*/
+  display: none;
 }
 
 .timeline::before {
